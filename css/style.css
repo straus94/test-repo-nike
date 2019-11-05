@@ -1,0 +1,395 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('../img/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
+    border: none;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+textarea,
+select {
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 20px;
+    padding: 0 0 10px 0;
+    color: #545454;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+
+.mainer {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.button {
+    width: 118px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    height: 30px;
+    display: block;
+    padding: 4px 26px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    background-color: #fff;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 0 -15px;
+    padding: 25px 0 65px 0;
+}
+
+.header__col {
+    padding: 0 15px;
+    /* flex-grow: 1; */
+}
+
+.header__col--stretch {
+    flex-grow: 1;
+}
+
+.logo__link:hover {
+    opacity: .7;
+}
+
+.logo__img {
+    display: inline-block;
+}
+
+.navigation {
+    margin: 0 40px 0 0;
+    text-align: right;
+}
+
+.navigation__link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 50px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    padding: 3px 0;
+    border-bottom: 1px solid transparent;
+
+}
+
+.navigation__link:hover,
+.navigation__link--active {
+    border-bottom-color: #fff;
+}
+
+.hamburger {
+    width: 22px;
+    height: 1px;
+    position: relative;
+    background-color: #fff;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: -6px;
+    left: 0;
+    background-color: #fff;
+}
+
+.hamburger:after {
+    top: auto;
+    bottom: -6px;
+
+}
+
+.block-card {
+    background-color: #fff;
+    position: relative;
+
+}
+
+.block-card:before,
+.block-card:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+.block-card:before {
+    left: -15px;
+    top: 15px;
+    padding: 0 15px;
+    width: 100%;
+    height: calc(100% - 30px);
+}
+
+.block-card:after {
+    left: -30px;
+    top: 30px;
+    padding: 0 30px;
+    width: 100%;
+    height: calc(100% - 60px);
+}
+
+.block-card {
+    display: flex;
+}
+.block-card__col{
+    flex-grow: 1;
+}
+
+.block-card__col--data {
+    width: 33%;
+    flex-grow: 0;
+}
+
+.block-carousel {
+    background-color: #ece9eb;
+    position: relative;
+    /* background-image: url(../img/product.jpg); */
+}
+
+.block-carousel__img {
+    display: block;
+    width: 100%;
+}
+
+.block-carousel__block-small {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 25px);
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.block-carousel__small-img {
+    /* position: absolute; */
+    margin: 0 11px;
+    border: 2px solid #fff;
+}
+.block-carousel__small-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.block-carousel__add {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: calc(100% - 25px);
+    height: calc(100% - 72px);
+}
+
+.block-carousel__btn-add:hover {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.block-carousel__btn-add {
+    display: block;
+}
+
+
+
+.block-card-data {
+    padding: 43px 10px 75px 31px;
+    position: relative;
+}
+
+.block-card-data__close {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    float: right;
+    box-sizing: border-box;
+    margin: 9px 7px 0 0;
+    cursor: pointer;
+}
+
+.block-card-data__close:before,
+.block-card-data__close:after {
+    background-color: #dfdfdf;
+    content: '';
+    width: 1px;
+    height: 15px;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.block-card-data__close:before {
+    transform: rotate(45deg);
+    margin: 0 0 0 5px;
+}
+
+.block-card-data__close:after {
+    transform: rotate(-45deg);
+    margin: 0 0 0 5px;
+}
+
+
+
+.block-card-data__new-model {
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ffa60d;
+    padding: 6px 7px;
+    margin: 0 0 12px 0;
+}
+
+.block-card-data__name-model {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    color: #000;
+    margin: 0 0 19px 0;
+}
+
+.block-card-data__for-model {
+    color: #5e4fff;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+}
+
+.block-card-data__rating-model {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0 0 18px 0;
+}
+
+.block-card-data__block-rating {
+    padding: 0 16px;
+    display: inline-block;
+    position: relative;
+}
+
+.block-card-data__block-rating input {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.block-card-data__block-rating label {
+    width: 9px;
+    height: 9px;
+    float: right;
+    margin: 0 2px;
+    background-image: url('../img/dislike.png');
+}
+
+.block-card-data__block-rating label:hover,
+.block-card-data__block-rating input:checked + label,
+.block-card-data__block-rating label:hover ~ label,
+.block-card-data__block-rating input:checked ~ label {
+    background-image: url('../img/like.png');
+}
+
+
+.block-card-data__price-model {
+    font-weight: 300;
+    font-size: 22px;
+    margin: 0 0 26px 0;
+}
+
+.block-card-data__size-model {
+    margin: 0 0 34px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+
+.block-cart-data__size-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-cart-data__size-item {
+    padding: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+
+.block-cart-data__size-item:hover {
+    border-color: #000;
+}
+
+.block-card-data__add-btn {
+    margin: 0 0 4px 0;
+    color: #fff;
+    background-color: #a200b8;
+}
+
+.block-card-data__add-btn:hover {
+    background-color: #c900e49a;
+}
+
+.block-card-data__wishlist-btn {
+    border: 1px solid #000;
+}
+
+.block-card-data__wishlist-btn:hover {
+    border: 3px solid #000;
+}
+
